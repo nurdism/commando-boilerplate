@@ -1,0 +1,18 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "current"
+      }
+    }]
+  ],
+  "plugins": [
+    "add-module-exports",
+    ["module-resolver", {
+      "root": ["."],
+      "alias": {
+        "~": "./src"
+      }
+    }]
+  ]
+}
